@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NEXT GENERATION</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="NEXT GENERATION — sweet, modern tech solutions: websites, AI, apps, branding, and more."/>
+  <meta property="og:title" content="NEXT GENERATION"/>
+  <meta property="og:description" content="We build beautiful, fast, AI-powered experiences."/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;800&display=swap" rel="stylesheet"/>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top app-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="" alt="" height="32" class="rounded"/>
+        
+        <span>NEXT GENERATION</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">AI Images</a></li>
+          <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <!-- Dark mode -->
+          <li class="nav-item ms-lg-3">
+            <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-pill">
+              <i class="bi bi-moon-stars"></i> <span class="d-none d-sm-inline">Dark</span>
+            </button>
+          </li>
+
+          <!-- Hidden login trigger (not shown on mobile menu) -->
+          <li class="nav-item d-none">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-center text-lg-start">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <h1 class="display-5 fw-bold gradient-text">NEXT GENERATION</h1>
+          <h2 class="fw-bold gradient-text-2">TECHNOLOGY</h2>
+          <p class="lead mt-3">See what makes us different — fast, modern, and sweet experiences powered by AI.</p>
+          <ul class="hero-punchlines">
+            <li>Build once, shine everywhere.</li>
+            <li>Speed, style, and smart automation.</li>
+            <li>From idea to launch — beautifully.</li>
+            <li>We craft, you glow.</li>
+          </ul>
+          <a href="#contact" class="btn btn-gradient mt-3"><i class="bi bi-rocket-takeoff"></i> Get Started</a>
+          <div class="small mt-3">
+            <i class="bi bi-clock-history"></i> <span id="datetime"></span>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-center">
+          <img src="pexels-thisisengineering-3861969.jpg" class="img-fluid rounded-4 shadow" alt="Tech hero image" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Our Services</h2>
+      <p class="text-center text-muted max-600 mx-auto">Deliciously crafted solutions for your brand — brisk, bold, and beautiful.</p>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <i class="bi bi-cpu-fill service-icon"></i>
+              <h5 class="card-title">AI Solutions</h5>
+              <p class="card-text">Chatbots, automation, smart analytics — we sprinkle intelligence into your workflow.</p>
+              <a href="#" class="stretched-link">Explore AI magic</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <i class="bi bi-window-fullscreen service-icon"></i>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Pixel-perfect, blazing-fast sites that look sweet on every screen.</p>
+              <a href="#" class="stretched-link">See web flavours</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card service-card h-100">
+            <div class="card-body">
+              <i class="bi bi-phone-flip service-icon"></i>
+              <h5 class="card-title">Mobile Apps</h5>
+              <p class="card-text">Smooth, intuitive apps that your users will love to tap.</p>
+              <a href="#" class="stretched-link">Taste the UX</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech image carousel -->
+      <div id="techCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 shadow">
+          <div class="carousel-item active">
+            <img src="pexels-pixabay-256381.jpg" class="d-block w-100" alt="AI image 1" loading="lazy">
+          </div>
+          <div class="carousel-item">
+            <img src="pexels-thepaintedsquare-3405456.jpg" class="d-block w-100" alt="AI image 2" loading="lazy">
+          </div>
+          <div class="carousel-item">
+            <img src="pexels-iriser-1209751.jpg" class="d-block w-100" alt="AI image 3" loading="lazy">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-soft">
+    <div class="container">
+      <h2 class="section-title text-center">About Us</h2>
+      <p class="max-800 mx-auto text-center">
+        We are NEXT GENERATION Tech — passionate builders crafting tomorrow’s experiences today.
+        Our recipe is simple: <strong>clarity</strong>, <strong>creativity</strong>, and <strong>care</strong>.
+        We design with love, code with precision, and launch with confidence.
+        From landing pages to AI platforms, we make tech feel <em>sweet</em>.
+      </p>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="mini-stat">
+            <i class="bi bi-lightning-charge-fill"></i>
+            <div>
+              <h6>Fast Delivery</h6>
+              <p>Rapid builds without the stress.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="mini-stat">
+            <i class="bi bi-shield-check"></i>
+            <div>
+              <h6>Reliable Quality</h6>
+              <p>Secure, stable, and scalable foundations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="mini-stat">
+            <i class="bi bi-stars"></i>
+            <div>
+              <h6>Delightful Design</h6>
+              <p>Interfaces that smile back at you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Images Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center"> Image Gallery</h2>
+      <p class="text-center text-muted">A sprinkle of futuristic vibes for inspiration.</p>
+      <div class="row g-3 mt-1">
+        <!-- Replace with your own images anytime -->
+        <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-harschshivam-2007647.jpg" alt="AI art 1" loading="lazy"/></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-cottonbro-4009623.jpg" alt="AI art 2" loading="lazy"/></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-jakubzerdzicki-27588336.jpg" alt="AI art 3" loading="lazy"/></div>
+        <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-simonptr-33607948.jpg" alt="AI art 4" loading="lazy"/></div>
+           <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-element5-1293260.jpg" alt="AI art 4" loading="lazy"/></div>
+              <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-cottonbro-5082578.jpg" alt="AI art 4" loading="lazy"/></div>
+              <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-shkrabaanthony-5475787.jpg" alt="AI art 4" loading="lazy"/></div>
+              <div class="col-6 col-md-4 col-lg-3"><img class="gallery-img" src="pexels-shkrabaanthony-5475760.jpg" alt="AI art 4" loading="lazy"/></div>
+              
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section id="calendar" class="py-5 bg-soft">
+    <div class="container">
+      <h2 class="section-title text-center">Our Calendar</h2>
+      <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+        <iframe src="https://calendar.google.com/calendar/embed?src=en.nigerian%23holiday%40group.v.calendar.google.com&ctz=Africa%2FLagos" style="border:0" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Watch: Building Sweet Websites</h2>
+      <div class="ratio ratio-16x9 mx-auto" style="max-width:960px">
+        <!-- Put your preferred website YouTube video here -->
+        <iframe src="https://www.youtube.com/embed/FazgJVnrVuI" title="Website Video" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-soft">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Us</h2>
+      <p class="text-center text-muted max-600 mx-auto">We respond fast — tell us what you want and we’ll sweeten it.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <form id="contactForm" class="card shadow-sm border-0">
+            <div class="card-body p-4">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input name="name" type="text" class="form-control" placeholder="Enter your name" required/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" placeholder="Enter your email" required/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea name="message" class="form-control" rows="4" placeholder="Write your message" required></textarea>
+              </div>
+              <button class="btn btn-gradient w-100" type="submit">
+                <i class="bi bi-send"></i> Send Message
+              </button>
+              <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+            </div>
+          </form>
+
+          <div class="text-center mt-4">
+            <p>
+              <i class="bi bi-telephone-fill"></i> Call: <b>08083487193</b><br/>
+              <i class="bi bi-geo-alt-fill"></i> Visit us today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 small">
+        <i class="bi bi-shield-lock"></i> Your info is safe with us.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center app-footer">
+    <div class="container">
+      <p class="mb-1">&copy; <span id="year"></span> NEXT GENERATION | Created by <b>Emmanuel Igiebor</b></p>
+      <p class="mb-0 tiny">Built with love, speed, and a sprinkle of AI.</p>
+    </div>
+  </footer>
+
+  <!-- Hidden Login (Modal) -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Member Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Hidden / not linked; open manually if needed -->
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email or Username</label>
+              <input type="text" class="form-control" placeholder="you@example.com"/>
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="••••••••"/>
+            </div>
+            <button class="btn btn-dark w-100" type="button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
